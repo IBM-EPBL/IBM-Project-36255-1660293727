@@ -1,0 +1,17 @@
+import random
+import time
+while True:
+    try:
+        time.sleep(3)
+        temp = random.randrange(20, 50)
+        humid = random.randrange(10, 100)
+        if temp >= 40:
+            print(temp, "the temperature is high!!- ALARM")
+        else:
+            print(temp, "the temperature is normal")
+        if humid >= 70:
+            print(humid, "the humidity is high!!- ALARM")
+        else:
+            print(humid, "the humidity is normal")
+    except KeyboardInterrupt:
+        break
